@@ -3,6 +3,7 @@ package com.white.security.core.validate;
 import com.white.security.core.properties.SecurityProperties;
 import com.white.security.core.validate.image.ImageCodeGenerator;
 import com.white.security.core.validate.sms.DefaultSmsCodeSender;
+import com.white.security.core.validate.sms.SmsCodeGenerator;
 import com.white.security.core.validate.sms.SmsCodeSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

@@ -25,7 +25,7 @@ public class ValidateCode {
     }
 
     // 判断是否过期
-    public boolean isExpire() {
+    public boolean isExpired() {
         return LocalDateTime.now().isAfter(expireTime);
     }
 

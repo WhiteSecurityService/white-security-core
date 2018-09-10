@@ -1,7 +1,7 @@
 package com.white.security.core.validate.sms;
 
 /**
- * All rights Reserved, Designed by xxxx
+ * 短信息发送器
  *
  * @Author: White
  * @Date: 2018/9/7

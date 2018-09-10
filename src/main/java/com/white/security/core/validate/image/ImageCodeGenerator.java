@@ -2,6 +2,8 @@ package com.white.security.core.validate.image;
 
 import com.white.security.core.properties.SecurityProperties;
 import com.white.security.core.validate.ValidateCodeGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 
@@ -15,8 +17,10 @@ import java.util.Random;
  * @Author: White
  * @Date: 2018/9/6
  */
+@Component
 public class ImageCodeGenerator implements ValidateCodeGenerator {
 
+    @Autowired
     private SecurityProperties securityProperties;
 
     @Override
