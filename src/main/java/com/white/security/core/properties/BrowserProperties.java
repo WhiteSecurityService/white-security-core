@@ -8,6 +8,9 @@ package com.white.security.core.properties;
  */
 public class BrowserProperties {
 
+    /** 默认注册页面 **/
+    private String signUpUrl = "/white-signUp.html";
+
     /** 默认登录页面 **/
     private String loginPage = SecurityConstants.DEFAULT_LOGIN_PAGE_URL;
 
@@ -39,5 +42,13 @@ public class BrowserProperties {
 
     public void setRememberMeSeconds(int rememberMeSeconds) {
         this.rememberMeSeconds = rememberMeSeconds;
+    }
+
+    public String getSignUpUrl() {
+        return signUpUrl;
+    }
+
+    public void setSignUpUrl(String signUpUrl) {
+        this.signUpUrl = signUpUrl;
     }
 }

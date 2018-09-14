@@ -16,6 +16,7 @@ import org.springframework.social.connect.ConnectionFactory;
  * @Date: 2018/9/10
  */
 @Configuration
+// 当配置了app-id的时候才启用
 @ConditionalOnProperty(prefix = "white.security.social.qq", name = "app-id")
 public class QQAutoConfig extends SocialAutoConfigurerAdapter {
 

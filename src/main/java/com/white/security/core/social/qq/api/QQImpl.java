@@ -2,7 +2,6 @@ package com.white.security.core.social.qq.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 import org.springframework.social.oauth2.TokenStrategy;
 
@@ -22,8 +21,7 @@ public class QQImpl extends AbstractOAuth2ApiBinding implements QQ {
     private String appId;
     private String openId;
 
-    @Autowired
-    private ObjectMapper objectMapper;
+    private ObjectMapper objectMapper = new ObjectMapper();
 
     public QQImpl(String accessToken, String appId) {
         super(accessToken, TokenStrategy.ACCESS_TOKEN_PARAMETER);

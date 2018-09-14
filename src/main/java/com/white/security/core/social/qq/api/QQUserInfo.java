@@ -23,6 +23,8 @@ public class QQUserInfo {
      * 不知道什么东西，文档上没写，但是实际api返回里有。
      */
     private String is_lost;
+
+    private String constellation;
     /**
      * 省(直辖市)
      */
@@ -234,5 +236,13 @@ public class QQUserInfo {
 
     public void setIs_yellow_year_vip(String is_yellow_year_vip) {
         this.is_yellow_year_vip = is_yellow_year_vip;
+    }
+
+    public String getConstellation() {
+        return constellation;
+    }
+
+    public void setConstellation(String constellation) {
+        this.constellation = constellation;
     }
 }
