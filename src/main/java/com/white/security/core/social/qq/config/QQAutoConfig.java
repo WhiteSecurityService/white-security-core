@@ -2,7 +2,7 @@ package com.white.security.core.social.qq.config;
 
 import com.white.security.core.properties.QQProperties;
 import com.white.security.core.properties.SecurityProperties;
-import com.white.security.core.social.qq.connet.QQConnectionFactory;
+import com.white.security.core.social.qq.connect.QQConnectionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.social.SocialAutoConfigurerAdapter;

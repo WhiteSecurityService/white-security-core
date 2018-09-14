@@ -1,4 +1,4 @@
-package com.white.security.core.social.qq.connet;
+package com.white.security.core.social.qq.connect;
 
 import com.white.security.core.social.qq.api.QQ;
 import com.white.security.core.social.qq.api.QQUserInfo;

@@ -1,6 +1,7 @@
 package com.white.security.core.social;
 
 import com.white.security.core.properties.SecurityProperties;
+import com.white.security.core.social.support.WhiteSpringSocialConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

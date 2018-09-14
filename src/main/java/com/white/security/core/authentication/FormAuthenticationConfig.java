@@ -9,7 +9,7 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import org.springframework.stereotype.Component;
 
 /**
- * All rights Reserved, Designed by xxxx
+ * 表单登录配置
  *
  * @Author: White
  * @Date: 2018/9/10

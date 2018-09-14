@@ -1,4 +1,4 @@
-package com.white.security.core.social.qq.connet;
+package com.white.security.core.social.qq.connect;
 
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;

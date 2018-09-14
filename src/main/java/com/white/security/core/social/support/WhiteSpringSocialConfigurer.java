@@ -1,4 +1,4 @@
-package com.white.security.core.social;
+package com.white.security.core.social.support;
 
 import org.springframework.social.security.SocialAuthenticationFilter;
 import org.springframework.social.security.SpringSocialConfigurer;
