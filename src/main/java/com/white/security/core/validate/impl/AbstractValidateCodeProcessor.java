@@ -17,7 +17,7 @@ import java.util.Map;
  * @Author: White
  * @Date: 2018/9/10
  */
-public abstract class AbstractValidateCodeProcessor<C extends ValidateCode> implements ValidateCodeProcessor {
+public abstract class  AbstractValidateCodeProcessor<C extends ValidateCode> implements ValidateCodeProcessor {
 
 
     /**

@@ -1,5 +1,6 @@
 package com.white.security.core.validate;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -8,7 +9,7 @@ import java.time.LocalDateTime;
  * @Author: White
  * @Date: 2018/9/7
  */
-public class ValidateCode {
+public class ValidateCode implements Serializable {
     // 验证码
     private String code;
     // 过期时间

@@ -1,5 +1,7 @@
 package com.white.security.core.properties;
 
+import org.springframework.boot.autoconfigure.social.SocialProperties;
+
 /**
  * All rights Reserved, Designed by xxxx
  *

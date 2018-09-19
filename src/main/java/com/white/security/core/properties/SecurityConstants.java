@@ -33,4 +33,9 @@ public interface SecurityConstants {
      */
     public static final String DEFAULT_VALIDATE_CODE_URL_PREFIX = "/code";
 
+    /**
+     * session失效默认的跳转地址
+     */
+    String DEFAULT_SESSION_INVALID_URL = "/white-session-invalid.html";
+
 }

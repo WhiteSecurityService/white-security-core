@@ -39,7 +39,7 @@ public class ValidateCodeFilter extends OncePerRequestFilter implements Initiali
     @Autowired
     private AuthenticationFailureHandler authenticationFailureHandler;
 
-    private Map<String, ValidateCodeType> urlMap = new HashMap<>();
+    private Map<String, ValidateCodeType> urlMap = new HashMap<String, ValidateCodeType>();
 
     @Autowired
     private SecurityProperties securityProperties;
