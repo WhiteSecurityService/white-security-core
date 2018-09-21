@@ -12,7 +12,7 @@ public class BrowserProperties {
     private SessionProperties session = new SessionProperties();
 
     /** 默认注册页面 **/
-    private String signUpUrl = "/white-signUp.html";
+    private String signUpUrl = SecurityConstants.DEFAULT_SIGN_UP_URL;
 
     /** 默认登录页面 **/
     private String signInPage = SecurityConstants.DEFAULT_LOGIN_PAGE_URL;

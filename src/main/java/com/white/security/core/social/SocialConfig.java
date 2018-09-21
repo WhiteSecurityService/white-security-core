@@ -1,6 +1,7 @@
 package com.white.security.core.social;
 
 import com.white.security.core.properties.SecurityProperties;
+import com.white.security.core.social.support.SocialAuthenticationFilterPostProcessor;
 import com.white.security.core.social.support.WhiteSpringSocialConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -39,6 +40,9 @@ public class SocialConfig extends SocialConfigurerAdapter {
     @Autowired(required = false)
     private ConnectionSignUp connectionSignUp;
 
+    @Autowired(required = false)
+    private SocialAuthenticationFilterPostProcessor socialAuthenticationFilterPostProcessor;
+
     @Override
     public UsersConnectionRepository getUsersConnectionRepository(ConnectionFactoryLocator connectionFactoryLocator) {
         JdbcUsersConnectionRepository repository = new JdbcUsersConnectionRepository(dataSource,
@@ -55,6 +59,7 @@ public class SocialConfig extends SocialConfigurerAdapter {
         String filterProcessUrl = securityProperties.getSocial().getFilterProcessUrl();
         WhiteSpringSocialConfigurer configurer = new WhiteSpringSocialConfigurer(filterProcessUrl);
         configurer.signupUrl(securityProperties.getBrowser().getSignUpUrl());
+        configurer.setSocialAuthenticationFilterPostProcessor(socialAuthenticationFilterPostProcessor);
         return configurer;
     }
 

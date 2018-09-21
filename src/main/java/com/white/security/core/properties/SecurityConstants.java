@@ -10,6 +10,9 @@ public interface SecurityConstants {
     /** 默认登录页面 **/
     String DEFAULT_LOGIN_PAGE_URL = "/white-signIn.html";
 
+    /** 默认注册页面 **/
+    String DEFAULT_SIGN_UP_URL = "/white-signUp.html";
+
     /** 当请求需要身份认证时，默认跳转的url**/
     String DEFAULT_UNAUTHENTICATION_URL = "/authentication/require";
 
@@ -38,4 +41,17 @@ public interface SecurityConstants {
      */
     String DEFAULT_SESSION_INVALID_URL = "/white-session-invalid.html";
 
+    /**
+     * openid参数名
+     */
+    String DEFAULT_PARAMETER_NAME_OPENID = "openId";
+    /**
+     * providerId参数名
+     */
+    String DEFAULT_PARAMETER_NAME_PROVIDERID = "providerId";
+
+    /**
+     * 默认的OPENID登录请求处理url
+     */
+    String DEFAULT_SIGN_IN_PROCESSING_URL_OPENID = "/authentication/openid";
 }
